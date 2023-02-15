@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>SS Desarrollo Web</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenidos">
+            <header class="contenidos">
+                <div class="contenidos-header">
+                    <h1>SS</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)" >SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)" >CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--iconos del menu-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--iconos de las redes sociales-->
+                    <div class="redex">
+                        <a href="https://github.com/MendoSeba"><i class="fa-brands fa-github"></i></a>
+                        <a href="Http://linkedin.com/in/sebastian-stallocca-10b40690"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">BIENVENIDOS!</p>
+                <h2>Soy <span>Sebastian Stallocca</span>, Desarrollador Web</h2>
+                <p class="description">Programando día a día , Desarrollando el futuro.</p>
+                <a href="#portfolio">Ir a mi Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/WhatsApp Image 2023-02-13 at 20.50.56.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2>Hola, soy <span>Sebastian Stallocca </span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Empece mi carrera de programador en tiempos de pandemia y desde entonces no he parado de aprender y sorprenderme, me encanta esta programar y lograr los retos que dia a dia se presentan.</p>
+            <a href="img/CV sebastian stallocca full stack.pdf" download="cv Sebastian Stallocca Programador" >Descarga mi CV</a>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web FrontEnd</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>React</li>
+                    <li>Marketing</li>
+                    <li>Diseños</li>
+                </ul>
+                <p>Diseños Web utilizando React y con diseños a corde a las necesidades del cliente.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web BackEnd</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Distintos lenguajes</li>
+                    <li>Testing</li>
+                    <li>Bases de Datos</li>
+                </ul>
+                <p>Programacion de paginas , orientacion a objetos , testing de funcionamiento y almacenamientos de datos.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/game-gbd23e867d_1280.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Game:
+                        <a href="https://github.com/MendoSeba/TaTeTi/blob/master/index.html">TaTeTi</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/macbook-1093641_960_720.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Proyecto en Produccion...</p>
+                    </div>
+                </div>
+            </div>
+        
+
+    </section>
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame Ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/mendoseba_@hotmail.com" method="POST" />
+                <div class="filamitad">
+                    <input type="text" name="name" id="name" placeholder="Nombre Complerto" class="input-mitad">
+                    <input type="text" name="email" id="email" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="titulo" id="titulo" placeholder="Titulo..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea  name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full" ></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>DESARROLLANDO EL FUTURO</p>
+        <a href="https://github.com/MendoSeba"><i class="fa-brands fa-github"></i></a>
+        <a href="Http://linkedin.com/in/sebastian-stallocca-10b40690"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
